@@ -1,0 +1,11 @@
+[atomselect top all] set beta 0 
+[atomselect top "chain A"] set beta 1 
+[atomselect top "chain B and backbone"] set beta 1
+[atomselect top all] writepdb alpha6_side.fix
+
+[atomselect top all] set beta 0
+[atomselect top "chain A"] set beta 1
+[atomselect top all] writepdb alpha6.fix
+
+
+[atomselect top all] set beta 0

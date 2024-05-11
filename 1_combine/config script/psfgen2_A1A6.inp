@@ -1,0 +1,26 @@
+package require psfgen
+topology top_all27_prot_lipid.inp
+
+pdbalias residue HIS HSD   
+pdbalias residue HOH TIP3
+pdbalias residue CA  CAL
+pdbalias residue TYS TYR
+pdbalias residue SR  CAL
+
+
+pdbalias atom ILE CD1 CD
+pdbalias atom HOH O OH2
+pdbalias atom CA CA CAL
+pdbalias atom SR SR CAL
+
+segment A1 {pdb A1.pdb}
+
+coordpdb A1.pdb A1
+
+segment A6 {pdb A6.pdb}
+coordpdb A6.pdb A6
+
+guesscoord
+
+writepsf A1A6.psf
+writepdb A1A6.pdb

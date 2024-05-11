@@ -16,14 +16,21 @@ The MD simulation are run on the following mutations: D1653A, D1663A, E1655A, E1
 
 The D1653A, D1663A and E1655A mutation is used for model validation. The results based on the hydrogen bond dissociation rate are consistent with the wet experimental results, that is, the dissociation rate of the E1655A mutant is significantly lower than the wild type, and the dissociation rate of the D1653A and D1663A mutants is significantly higher than the wild type. Therefore, we believe that the model is valid.
 
-![Wet lab results (left) vs. simulation results (right, hydrogen bond survival rate)](validation.png)
+| ![Wet lab results (left) vs. simulation results (right, hydrogen bond survival rate)](validation.png) | 
+|:--:| 
+| *Wet lab results (left) vs. simulation results (right, hydrogen bond survival rate)* |
 
 After validating the sites in the model have significant effects on bindings, we attempted to find other sites that may affect binding stability. We believe that the polarity of amino acids is a key factor. Based on the previous studies, we selected R1659 and E1660, a pair of adjacent residues with opposite polarity. Meanwhile,  considering the possible influence of spatial structure, we chose valine that has one more methyl group instead of the commonly used alanine as the mutant amino acid.
 
 The results showed that the double mutant R1659E1660V had the lowest RMSD value and the most stable binding trend. Meanwhile, through the intuitive animation with VMD, we found that R1659E1660V α6 helix tends to approach the Spacer domain in parallel ("=" shape), while the wild-type and other single mutant tend to approach it with an angle ("V" shape). We speculate that this may be caused by the expansion of the contact area due to the elimination of polarity.
 
-![RMSD of the mutants](RMSD.png)\
-![Visualized binding of wild-type (left) and the double mutant (right)](WT_vs_Mutant.png)
+| ![RMSD of the mutants](RMSD.png) | 
+|:--:| 
+| *RMSD of the mutants throughout simulations* |
+
+| ![Visualized binding of wild-type (left) and the double mutant (right)](WT_vs_Mutant.png) | 
+|:--:| 
+| *Visualized binding of wild-type (left) and the double mutant (right)* |
 
 With these simulation results, the wet lab will prepare corresponding mutants and test their binding abilities with the Spacer domain in reality.
 

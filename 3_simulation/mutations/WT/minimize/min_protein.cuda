@@ -1,0 +1,8 @@
+#!/bin/sh
+
+NAMDPATH=~/NAMD_2.12_Linux-x86_64-multicore-CUDA
+echo Start  NAMD run at $(date) on $(hostname)
+sleep 3
+LD_LIBRARY_PATH=$NAMDPATH:$LD_LIBRARY_PATH \
+$NAMDPATH/namd2 +p10 +setcpuaffinity +devices 1,0  min_protein.conf > min_protein.log
+echo Finish NAMD run at $(date) on $(hostname)

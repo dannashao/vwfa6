@@ -1,0 +1,18 @@
+H-Bonds Plugin, Version 1.1
+Mon Nov 19 18:31:00 +0800 2018
+
+Parameters used in the calculation of hydrogen bonds:
+- Atomselection 1: protein and resid 1653 to 1668
+- Atomselection 2: protein and resid  556 to 682
+- Update selections every frame: yes
+- Initial frame: 0
+- Frame step: 1
+- Final frame: 0
+- Donor-Acceptor distance: 3.5
+- Angle cutoff: 30
+- Type: all
+- Write a file with H bond/frame data: yes
+- Filename: hbonds.dat
+- Details output file: hbonds-details.dat
+
+Printing frame/hbond data to file... Done.

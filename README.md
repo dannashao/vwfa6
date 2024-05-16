@@ -5,10 +5,10 @@ The goal of the whole experiment is to utilize the recognition and cleavage mech
 
 In the previous studies, Gao et al.[[1]](#1) confrimed the residues 1653-1668 on vWF-A2 are involved in the recognition process and and effective recognition can significantly improve the enzyme digestion efficiency. Akiyama et al.[[2]](#2) proposed three key external binding sites, of which the 1653-1668 sequence on vWF is just on an α helix at the C terminus of vWF-A2 (α6 helix). Fang et al.[[3]](#3) constructed a docking model of ADAMTS13-Spacer and vWF-A2-α6 through MD, and predicted a series of key residues: 1653, 1663, 1657, 1661, 1662, 1664, and 1665. In addition, the interaction between Spacer-α6 is mainly a hydrophobic interaction.
 
-Based on these studies, we selected the 1653-1668 fragment of vWF-A2-α6 as the design basis. Through mutating its key residues, we aimed to build an α6 fragment with stronger recognition ability as an antagonist for the recognition and cleavage between vWF and ADAMTS13.
+Based on these studies, we selected the 1653-1668 fragment of vWF-A2-α6 as the design basis. Through mutating its key residues, we aimed to build an α6 fragment with stronger recognition ability as an antagonist for the recognition and cleavage between vWF and ADAMTS13. **We hope to boost this research with computer simulations: by simulating the binding strength between various α6 mutants and Spacer, we can select the most promising mutant for the wet lab in order to save labor and protein production costs.**
 
 ## Introduction
-This repository contains code for molecular dynamics (MD) simulation through NAMD and VMD, and the corresponding results on mutating certain residues of α6 and their recognition abilities between the Spacer domain of ADAMTS13.
+**This repository contains code for molecular dynamics (MD) simulation through NAMD and VMD, and the corresponding results on mutating certain residues of α6 and their recognition abilities between the Spacer domain of ADAMTS13.**
 
 In the first stage, we extract and combine A1 and A6 into a compled and then performed energy minimization. Then, we perform this again after solvation and ionization of the complex, and obtain a ready-to-use complex for the MD simulations.
 
